@@ -1,14 +1,10 @@
 'fileTypes': [
-  'groovy'
-  'groovy.inc'
-  'gvy'
-  'gradle'
   'Jenkinsfile'
 ]
 'firstLineMatch': '^#!/*.*\\bgroovy'
 'foldingStartMarker': '(\\{\\s*$|^\\s*// \\{\\{\\{)'
 'foldingStopMarker': '^\\s*(\\}|// \\}\\}\\}$)'
-'name': 'Groovy'
+'name': 'Jenkinsfile'
 'patterns': [
   {
     'captures':
@@ -642,6 +638,10 @@
       {
         'match': '\\b(this|super)\\b'
         'name': 'variable.language.groovy'
+      },
+      {
+        'match': '\\b(pipeline|agent|stages|stage|steps|post|when|script)'
+        'name': 'variable.language.jenkinsfile'
       }
     ]
   'map-keys':
@@ -1123,6 +1123,26 @@
       {
         'match': '(?x)\\b(?:shouldFail|fail(?:NotEquals)?|ass(?:ume|ert(?:S(?:cript|ame)|N(?:ot(?:Same|\n\t\t\t\t\tNull)|ull)|Contains|T(?:hat|oString|rue)|Inspect|Equals|False|Length|\n\t\t\t\t\tArrayEquals)))\\b'
         'name': 'support.function.testing.groovy'
+      }
+      {
+        'match': '(?x)\\b(credentials)\\b'
+        'name': 'support.function.helpers.jenkinsfile'
+      }
+      {
+        'match': '(?x)\\b(cron|pollSCM)\\b'
+        'name': 'support.function.triggers.jenkinsfile'
+      }
+      {
+        'match': '(?x)\\b(string|booleanParam)\\b'
+        'name': 'support.function.parameters.jenkinsfile'
+      }
+      {
+        'match': '(?x)\\b(buildDiscarder|disableConcurrentBuilds|skipDefaultCheckout|timeout|skipStagesAfterUnstable|retry|timestamps)\\b'
+        'name': 'support.function.options.jenkinsfile'
+      }
+      {
+        'match': '(?x)\\b(branch|environment|not|allOf|anyOf)\\b'
+        'name': 'support.function.when.conditions.jenkinsfile'
       }
     ]
   'types':
