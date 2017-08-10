@@ -290,3 +290,41 @@
   'withWriterAppend(charset) { … }':
     'prefix': 'with'
     'body': 'withWriterAppend(${1:charset}) {${2/(.+)/(?1: )/}${2:writer}${2/(.+)/(?1: ->)/}\n\t$0\n}'
+# Jenkinsfile snippets
+  'stage(name) {...}':
+    'prefix': 'stage'
+    'body': 'stage(\'${1:name}\') {\n\t$0\n}'
+  'steps {...}':
+    'prefix': 'steps'
+    'body': 'steps {\n\t$0\n}'
+  'stages {...}':
+    'prefix': 'stages'
+    'body': 'stages {\n\t$0\n}'
+  'when {...}':
+    'prefix': 'when'
+    'body': 'when {\n\t$0\n}'
+  'anyOf {...}':
+    'prefix': 'anyOf'
+    'body': 'anyOf {\n\t$0\n}'
+  'allOf {...}':
+    'prefix': 'allOf'
+    'body': 'allOf {\n\t$0\n}'
+  'expression {...}':
+    'prefix': 'expression'
+    'body': 'expression {\n\t$0\n}'
+  'not {...}':
+    'prefix': 'not'
+    'body': 'not {\n\t$0\n}'
+  'pipeline {...}':
+    'prefix': 'pipeline'
+    'body': 'pipeline {\n\t$0\n}'
+  'environment name:...':
+    'prefix': 'environment'
+    'body': 'environment name: \'$1\', value: \'$2\'$0'
+  'agent label':
+    'prefix': 'labelagent'
+    'body': 'agent { label \'$1\'}$0'
+  'agent docker':
+    'prefix': 'dockeragent'
+    'body': 'agent {\n\tdocker {\n\t\timage \'${1:alpine:3.6}\'$2\n\t}\n}$0'
+
