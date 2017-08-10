@@ -12,7 +12,7 @@ Contributions are *greatly* appreciated. Please fork this repository, open a pul
 ## Installation
 
 ```shell
-apm install language-groovy
+apm install language-jenkinsfile
 ```
 If `apm` is not recognized, open Atom, open the Atom menu, and select "Install Shell Commands". Then try running the command again.
 
@@ -21,7 +21,7 @@ If `apm` is not recognized, open Atom, open the Atom menu, and select "Install S
 You can use `apm` to link the local copy and install the dependencies:
 
 ```shell
-> apm dev language-groovy /path/to/your/cloned/fork
+> apm dev language-jenkinsfile /path/to/your/cloned/fork
 ```
 
 The package will appear in the *Development* section of Atom's packages. Re-open your window in Development Mode (*View->Developer->Open in Dev Mode*) and test your changes.
