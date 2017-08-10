@@ -1,11 +1,11 @@
-# Groovy language support in Atom
+# Jenkinsfile language support in Atom
 
-[![Build Status](https://travis-ci.org/Jakehp/language-groovy.svg?branch=master)](https://travis-ci.org/Jakehp/language-groovy)
+[![Build Status](https://travis-ci.org/BastienAr/language-jenkinsfile.svg?branch=master)](https://travis-ci.org/BastienAr/language-jenkinsfile)
 
-Adds syntax highlighting and snippets to Groovy files in Atom.
+[groovy-language](https://github.com/Jakehp/language-groovy) modifications to adds syntax highlighting and snippets to Jenkinsfile files in Atom.
 
-Originally [converted](https://atom.io/docs/latest/hacking-atom-converting-from-textmate)
-from the [groovy.tmbundle](https://github.com/textmate/groovy.tmbundle).
+Originally forked
+from the [groovy-language](https://github.com/Jakehp/language-groovy).
 
 Contributions are *greatly* appreciated. Please fork this repository, open a pull request to add snippets, make grammar tweaks, fix issues, etc.
 
@@ -25,6 +25,3 @@ You can use `apm` to link the local copy and install the dependencies:
 ```
 
 The package will appear in the *Development* section of Atom's packages. Re-open your window in Development Mode (*View->Developer->Open in Dev Mode*) and test your changes.
-
-Contributors:  
-[AwaNoodle](https://github.com/AwaNoodle), [ssbarnea](https://github.com/ssbarnea), [sjurgemeyer](https://github.com/sjurgemeyer), [glaforge](https://github.com/glaforge), [alberthier](https://github.com/alberthier), [kpitt](https://github.com/kpitt), [ChristianMurphy](https://github.com/ChristianMurphy), [bhuddleston42](https://github.com/bhuddleston42), [bakharal](https://github.com/bakharal)
