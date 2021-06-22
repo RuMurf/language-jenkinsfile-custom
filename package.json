@@ -1,15 +1,15 @@
 {
-  "name": "language-jenkinsfile",
+  "name": "language-jenkinsfile-custom",
   "version": "0.1.1",
   "private": true,
   "description": "Jenkinsfile language support in Atom",
-  "repository": "https://github.com/BastienAr/language-jenkinsfile",
+  "repository": "https://github.com/Rumurf/language-jenkinsfile-custom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0 <2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/BastienAr/language-jenkinsfile/issues"
+    "url": "https://github.com/RuMurf/language-jenkinsfile-custom/issues"
   },
   "scripts": {
     "test": "coffeelint grammars/jenkinsfile.cson settings/language-jenkinsfile.cson snippets/language-jenkinsfile.cson"
